@@ -13,17 +13,4 @@
 #import "Singleton_Lock.h"
 #import "Singleton_GCD.h"
 
-#pragma mark - Demo
-void singleton_demo(void) {
-    Singleton_SingleThread *ss = [Singleton_SingleThread sharedInterface];
-    NSLog(@"ss = %@\n", ss);
-    ss = nil;
-    ss = [Singleton_SingleThread sharedInterface];
-    NSLog(@"ss (after set to nil) = %@\n", ss);
-    
-    Singleton_Lock *sl = [Singleton_Lock sharedInterface];
-    Singleton_GCD *sg = [Singleton_GCD sharedInterface];
-    NSLog(@"-> Singleton_SingleThread = %@ | Singleton_Lock = %@ | Singleton_GCD = %@", ss, sl, sg);
-}
-
 #endif /* Singleton_h */

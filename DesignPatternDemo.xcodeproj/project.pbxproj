@@ -45,6 +45,11 @@
 		4D684A13219B033D005741A1 /* Singleton_GCD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6849F3219B0282005741A1 /* Singleton_GCD.h */; };
 		4D684A14219B033D005741A1 /* Singleton_Lock.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6849EE219B0282005741A1 /* Singleton_Lock.h */; };
 		4D684A15219B033D005741A1 /* Singleton_SingleThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6849F2219B0282005741A1 /* Singleton_SingleThread.h */; };
+		4D684A1A219B0A92005741A1 /* NMMVCModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D684A18219B0A92005741A1 /* NMMVCModel.h */; };
+		4D684A1B219B0A92005741A1 /* NMMVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D684A19219B0A92005741A1 /* NMMVCModel.m */; };
+		4D684A1E219B0BDC005741A1 /* NMMVCController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D684A1C219B0BDC005741A1 /* NMMVCController.h */; };
+		4D684A1F219B0BDC005741A1 /* NMMVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D684A1D219B0BDC005741A1 /* NMMVCController.m */; };
+		4D684A21219B0C08005741A1 /* MVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D684A20219B0BE7005741A1 /* MVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +99,11 @@
 		4D6849F2219B0282005741A1 /* Singleton_SingleThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton_SingleThread.h; sourceTree = "<group>"; };
 		4D6849F3219B0282005741A1 /* Singleton_GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton_GCD.h; sourceTree = "<group>"; };
 		4D684A04219B02F9005741A1 /* DPHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHeader.h; sourceTree = "<group>"; };
+		4D684A18219B0A92005741A1 /* NMMVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMVCModel.h; sourceTree = "<group>"; };
+		4D684A19219B0A92005741A1 /* NMMVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMVCModel.m; sourceTree = "<group>"; };
+		4D684A1C219B0BDC005741A1 /* NMMVCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMVCController.h; sourceTree = "<group>"; };
+		4D684A1D219B0BDC005741A1 /* NMMVCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMVCController.m; sourceTree = "<group>"; };
+		4D684A20219B0BE7005741A1 /* MVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				4D684A04219B02F9005741A1 /* DPHeader.h */,
+				4D684A17219B0A59005741A1 /* MVC */,
 				4D6849CA219B0282005741A1 /* Factory */,
 				4D6849EC219B0282005741A1 /* Singleton */,
 				4D6849B7219B0259005741A1 /* ViewController.h */,
@@ -239,6 +250,18 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		4D684A17219B0A59005741A1 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				4D684A20219B0BE7005741A1 /* MVC.h */,
+				4D684A18219B0A92005741A1 /* NMMVCModel.h */,
+				4D684A19219B0A92005741A1 /* NMMVCModel.m */,
+				4D684A1C219B0BDC005741A1 /* NMMVCController.h */,
+				4D684A1D219B0BDC005741A1 /* NMMVCController.m */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -249,10 +272,13 @@
 				4D684A06219B0316005741A1 /* DPHeader.h in Headers */,
 				4D684A07219B0316005741A1 /* Factory.h in Headers */,
 				4D684A08219B0316005741A1 /* FactoryMethod.h in Headers */,
+				4D684A21219B0C08005741A1 /* MVC.h in Headers */,
+				4D684A1E219B0BDC005741A1 /* NMMVCController.h in Headers */,
 				4D684A09219B033D005741A1 /* AbstractFactory_sub1.h in Headers */,
 				4D684A0A219B033D005741A1 /* AbstractFactory_sub2.h in Headers */,
 				4D684A0B219B033D005741A1 /* AbstractFactory+Super.h in Headers */,
 				4D684A0C219B033D005741A1 /* AnotherProduct_sub2.h in Headers */,
+				4D684A1A219B0A92005741A1 /* NMMVCModel.h in Headers */,
 				4D684A0D219B033D005741A1 /* AnotherProduct_sub1.h in Headers */,
 				4D684A0E219B033D005741A1 /* FactoryMethod_sub1.h in Headers */,
 				4D684A0F219B033D005741A1 /* FactoryMethod_sub2.h in Headers */,
@@ -347,12 +373,14 @@
 				4D6849F6219B0282005741A1 /* AbstractFactory_sub1.m in Sources */,
 				4D6849C4219B025B005741A1 /* main.m in Sources */,
 				4D684A02219B0282005741A1 /* Singleton_GCD.m in Sources */,
+				4D684A1F219B0BDC005741A1 /* NMMVCController.m in Sources */,
 				4D684A03219B0282005741A1 /* Singleton_Lock.m in Sources */,
 				4D6849FC219B0282005741A1 /* Product_sub1.m in Sources */,
 				4D6849F8219B0282005741A1 /* AnotherProduct_sub2.m in Sources */,
 				4D684A01219B0282005741A1 /* Singleton_SingleThread.m in Sources */,
 				4D6849B6219B0259005741A1 /* AppDelegate.m in Sources */,
 				4D6849FE219B0282005741A1 /* FactoryMethod_sub1.m in Sources */,
+				4D684A1B219B0A92005741A1 /* NMMVCModel.m in Sources */,
 				4D6849F7219B0282005741A1 /* AbstractFactory_sub2.m in Sources */,
 				4D6849FF219B0282005741A1 /* FactoryMethod.m in Sources */,
 			);
@@ -498,7 +526,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 467H22CM6C;
-				INFOPLIST_FILE = DesignPatternDemo/Info.plist;
+				INFOPLIST_FILE = DesignPatternDemo/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,7 +544,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 467H22CM6C;
-				INFOPLIST_FILE = DesignPatternDemo/Info.plist;
+				INFOPLIST_FILE = DesignPatternDemo/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -11,5 +11,6 @@
 
 #import "Factory.h"
 #import "Singleton.h"
+#import "MVC.h"
 
 #endif /* DPHeader_h */
