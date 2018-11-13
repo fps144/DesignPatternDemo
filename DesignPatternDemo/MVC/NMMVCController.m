@@ -11,8 +11,8 @@
 
 @interface NMMVCController ()
 
-@property (nonatomic, strong) UILabel *dataLabel;
-@property (nonatomic, strong) NSArray<NMMVCModel *> *dataSource;
+@property (nonatomic, strong) UILabel *dataLabel; ///< 模拟MVC中的View
+@property (nonatomic, strong) NSArray<NMMVCModel *> *dataSource; ///< 数据源
 
 @end
 

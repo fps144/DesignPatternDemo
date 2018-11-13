@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/** 模拟MVC中的Controller */
 @interface NMMVCController : UIViewController
 
 @end
